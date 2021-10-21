@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MCSettings AllowRequired="False" Name="Automate CheckSet" Author="Ra Enrique Galicia" Description="Review Element Properties on Forge" Image="" LastModified="132792179140088265">
+  <Heading ID="d55bb036-93b2-4e6c-bec6-968830278e96" HeadingText="&lt;--Unused--&gt;" Description="Checks that have been created but not placed in the structure yet." IsChecked="True">
+    <Section ID="c7c49650-d632-4b3d-9702-9c25e7caf05e" SectionName="&lt;--Unused--&gt;" Title="Checks that have not been placed" IsChecked="True" Description="" />
+  </Heading>
+  <Heading ID="de53fb44-d156-419c-8d0b-fd529d0311f3" HeadingText="General Checks" Description="" IsChecked="True">
+    <Section ID="101e50c2-5389-4b5e-96cf-acf6ca348c8a" SectionName="Section 1" Title="" IsChecked="True" Description="">
+      <Check ID="7150c4f3-27da-469b-be37-a6ca3c302762" CheckName="Check Materials with proper configuration" Description="" FailureMessage="" ResultCondition="CountAndList" CheckType="Custom" IsRequired="False" IsChecked="True">
+        <Filter ID="d3dad684-587c-424d-b0c9-5e2e9862548b" Operator="And" Category="Category" Property="OST_Materials" Condition="Included" Value="True" CaseInsensitive="False" Unit="None" UnitClass="None" FieldTitle="" UserDefined="False" Validation="None" />
+        <Filter ID="07c9163e-f405-43a9-b3f4-8d5f8ef1e82d" Operator="And" Category="Parameter" Property="Mark" Condition="HasValue" Value="True" CaseInsensitive="False" Unit="None" UnitClass="None" FieldTitle="" UserDefined="False" Validation="None" />
+      </Check>
+      <Check ID="4978983c-c1a5-493c-a8b8-e07d034b5df1" CheckName="Check Objects Have Configured Material Parameters" Description="" FailureMessage="" ResultCondition="FailMatchingElements" CheckType="Custom" IsRequired="False" IsChecked="True">
+        <Filter ID="72eb384d-317e-416d-aeac-30fade2259b6" Operator="And" Category="Category" Property="OST_GenericModel" Condition="Included" Value="True" CaseInsensitive="False" Unit="None" UnitClass="None" FieldTitle="" UserDefined="False" Validation="None" />
+        <Filter ID="7bf4e11b-963c-4f3e-8998-cfd0b19b1364" Operator="And" Category="Parameter" Property="Material" Condition="Undefined" Value="True" CaseInsensitive="False" Unit="None" UnitClass="None" FieldTitle="" UserDefined="False" Validation="None" />
+      </Check>
+    </Section>
+  </Heading>
+</MCSettings>
